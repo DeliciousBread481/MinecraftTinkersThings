@@ -1,7 +1,5 @@
 package firok.tiths.item;
 
-import net.minecraft.client.renderer.ItemMeshDefinition;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -15,7 +13,7 @@ import java.util.List;
 /**
  * 液体球
  */
-public class ItemFluidBall extends ItemCustom implements IFluid, ItemMeshDefinition
+public class ItemFluidBall extends ItemCustom implements IFluid
 {
 	public ItemFluidBall()
 	{
@@ -44,11 +42,5 @@ public class ItemFluidBall extends ItemCustom implements IFluid, ItemMeshDefinit
 		}
 
 		tooltip.add(fluidStack.amount + " mL");
-	}
-
-	@Override
-	public ModelResourceLocation getModelLocation(ItemStack stack)
-	{
-		return null;
 	}
 }
